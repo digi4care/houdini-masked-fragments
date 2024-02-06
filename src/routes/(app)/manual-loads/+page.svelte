@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { _MyProductContentSmall$data } from '$houdini';
+	import type { _MyProductContentSmall } from '$houdini';
 	import type { PageData } from './$types';
 	export let data: PageData;
 
@@ -7,7 +7,7 @@
 	let { GetProductsMaskingTest } = data;
 	$: ({ GetProductsMaskingTest } = data);
 
-	const products: _MyProductContentSmall$data[] = $GetProductsMaskingTest.data?.products?.nodes;
+	const products = $GetProductsMaskingTest.data?.products?.nodes;
 
 	/**
 	 * My Components

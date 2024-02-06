@@ -1,10 +1,10 @@
 <script lang="ts">
 	import ImageWrapper from './ImageWrapper.svelte';
 
-	import type { ProductContentSmall$data } from '$houdini';
+	import type { ProductContentSmall } from '$houdini';
 	import { fragment, graphql } from '$houdini';
 
-	export let product: ProductContentSmall$data;
+	export let product: ProductContentSmall;
 	export let priority: boolean;
 	export let className: string;
 

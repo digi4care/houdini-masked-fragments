@@ -2,8 +2,6 @@
 	import ImageWrapper from './ImageWrapper.svelte';
 
 	import type {
-		_MyProductContentSmall$artifact,
-		_MyProductContentSmall$data,
 		_MyProductContentSmall
 	} from '$houdini';
 	import { fragment, graphql } from '$houdini';

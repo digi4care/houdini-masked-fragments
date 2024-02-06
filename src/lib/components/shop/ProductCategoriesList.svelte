@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { GetShopCategories$result } from '$houdini';
 	import type { ShopCategoryEdgeType } from '@/types/graphql';
 
 	// Deze types kunnen nu gebruikt worden voor het definiëren van je data structuren
