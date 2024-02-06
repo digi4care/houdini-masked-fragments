@@ -20,7 +20,7 @@
 
 	const sourceUrl: string = $thumbnailImageFields?.sourceUrl || fallbackImage;
 	const altText: string = $thumbnailImageFields?.altText;
-	console.log($thumbnailImageFields);
+	// console.log($thumbnailImageFields);
 </script>
 
 <picture>
