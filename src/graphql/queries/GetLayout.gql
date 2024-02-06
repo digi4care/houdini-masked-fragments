@@ -1,0 +1,17 @@
+query GetLayout {
+	generalSettings {
+		...GeneralSettings
+	}
+	header: getHeader {
+		...HCMSHeader
+	}
+	footer: getFooter {
+		...HCMSFooter
+	}
+	headerMenu: menu(id: "hcms-menu-header", idType: LOCATION) {
+		...MenuItems
+	}
+	footerMenu: menu(id: "hcms-menu-footer", idType: LOCATION) {
+		...MenuItems
+	}
+}

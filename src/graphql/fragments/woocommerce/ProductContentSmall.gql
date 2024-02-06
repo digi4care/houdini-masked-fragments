@@ -1,0 +1,23 @@
+fragment ProductContentSmall on ProductUnion {
+	id
+	databaseId
+	slug
+	name
+	type
+	... on ProductUnion {
+		shortDescription(format: RAW)
+	}
+	image {
+		...ThumbnailImageFields
+	}
+	... on ProductWithPricing {
+		price
+		regularPrice
+		salePrice
+	}
+	... on InventoriedProduct {
+		stockStatus
+		stockQuantity
+		soldIndividually
+	}
+}

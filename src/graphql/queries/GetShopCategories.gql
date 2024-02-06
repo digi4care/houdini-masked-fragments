@@ -1,0 +1,26 @@
+query GetShopCategories(
+	$first: Int
+	$after: String
+	$where: RootQueryToProductCategoryConnectionWhereArgs
+) {
+	productCategories(first: $first, after: $after, where: $where) {
+		pageInfo {
+			hasNextPage
+			endCursor
+		}
+		edges {
+			node {
+				id
+				name
+				slug
+				count
+			}
+		}
+		nodes {
+			id
+			name
+			slug
+			count
+		}
+	}
+}
