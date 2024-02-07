@@ -15,7 +15,7 @@ import woocommerceSettings from '@/lib/config/webshop';
 
 export const load: PageLoad = async (event) => {
 	try {
-		const nextPage =
+		const itemsPerPage =
 			woocommerceSettings.itemsPerPage.shop || woocommerceSettings.itemsPerPage.default;
 
 		return {
@@ -25,7 +25,7 @@ export const load: PageLoad = async (event) => {
 				load_GetProductsMaskingTest({
 					event,
 					variables: {
-						first: nextPage,
+						first: itemsPerPage,
 						where: getProductsWhereArgs
 					}
 				}),

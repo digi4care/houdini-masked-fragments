@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { fragment, graphql } from '$houdini';
+	import { fragment, graphql, type MyThumbnailImageFields } from '$houdini';
 
-	export let source;
+	export let source: MyThumbnailImageFields;
 	export let priority: boolean;
 
 	import { Image } from '@unpic/svelte';
@@ -18,9 +18,9 @@
 		`)
 	);
 
-	const sourceUrl: string = $thumbnailImageFields?.sourceUrl || fallbackImage;
-	const altText: string = $thumbnailImageFields?.altText;
-	// console.log($thumbnailImageFields);
+	$: sourceUrl = $thumbnailImageFields?.sourceUrl || fallbackImage;
+	$: altText = $thumbnailImageFields?.altText;
+	// $: console.log($thumbnailImageFields.sourceUrl);
 </script>
 
 <picture>

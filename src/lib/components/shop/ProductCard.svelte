@@ -73,10 +73,10 @@
 		<C.Title class="w-full truncate whitespace-nowrap font-serif text-base"
 			>{$productContentSmall.name}</C.Title
 		>
-		<ImageWrapper source={productContentSmall} {priority} />
+		<ImageWrapper source={product?.image} {priority} />
 	</C.Header>
 	<C.Content class="flex flex-col space-y-2 p-4">
-		<p class="font-serif text-sm font-semibold">{$productContentSmall.price}</p>
+		<p class="font-serif text-sm font-semibold">{@html $productContentSmall.price}</p>
 	</C.Content>
 	<C.Footer class="mt-auto p-4 flex-col">
 		{#if categories}
