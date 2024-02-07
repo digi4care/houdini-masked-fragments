@@ -11,7 +11,7 @@
 	},
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "svelte-kit sync && vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
