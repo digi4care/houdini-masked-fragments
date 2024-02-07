@@ -54,7 +54,8 @@
 		<div class="mb-4 mt-auto flex justify-start gap-x-2 text-sm">
 			<Button
 				disabled={!$GetProductsMaskingTest.pageInfo.hasPreviousPage}
-				on:click={async () => GetProductsMaskingTest.loadPreviousPage({ last: 12 })}
+				on:click={async () =>
+					GetProductsMaskingTest.loadPreviousPage({ last: 10 })}
 				class={cn(
 					hasPreviousPage
 						? 'text-primary-foreground'
@@ -70,7 +71,7 @@
 
 			<Button
 				disabled={!$GetProductsMaskingTest.pageInfo.hasNextPage}
-				on:click={async () => GetProductsMaskingTest.loadNextPage({ first: 12 })}
+				on:click={async () => GetProductsMaskingTest.loadNextPage({ first: 10 })}
 				class={cn(
 					hasNextPage
 						? 'text-primary-foreground'
@@ -101,7 +102,7 @@
 		<div class="mb-4 mt-auto flex justify-start gap-x-2 text-sm">
 			<Button
 				disabled={!$GetProductsMaskingTest.pageInfo.hasPreviousPage}
-				on:click={async () => GetProductsMaskingTest.loadPreviousPage({ last: 20 })}
+				on:click={async () => GetProductsMaskingTest.loadPreviousPage({ last: 10 })}
 				class={cn(
 					hasPreviousPage
 						? 'text-primary-foreground'

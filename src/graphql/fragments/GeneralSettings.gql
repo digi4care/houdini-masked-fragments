@@ -1,4 +1,4 @@
-fragment GeneralSettings on GeneralSettings {
+fragment _GeneralSettings on GeneralSettings {
 	description
 	language
 	timezone

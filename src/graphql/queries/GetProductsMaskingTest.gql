@@ -16,13 +16,13 @@ query GetProductsMaskingTest(
 		edges {
 			cursor
 			node {
-				..._MyProductTaxonomies
-				..._MyProductContentSmall
+				...MyProductTaxonomies
+				...MyProductContentSmall
 			}
 		}
 		nodes {
-			..._MyProductTaxonomies
-			..._MyProductContentSmall
+			...MyProductTaxonomies
+			...MyProductContentSmall
 		}
 	}
 }
